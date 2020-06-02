@@ -1,3 +1,5 @@
+require 'open-uri'
+
 module QualtricsAPI
   class ResponseExport < BaseModel
     values do
