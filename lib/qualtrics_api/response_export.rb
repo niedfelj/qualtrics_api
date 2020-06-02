@@ -32,7 +32,7 @@ module QualtricsAPI
     end
 
     def open(&block)
-      Kernel.open(@file_url, QualtricsAPI.connection(self).headers, &block)
+      URI.open(@file_url, QualtricsAPI.connection(self).headers, &block)
     end
   end
 end
